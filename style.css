@@ -5,7 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body {
+  background: #f1f1f3;
+}
 .fira-sans-thin {
   font-family: "Fira Sans", serif;
   font-weight: 100;
@@ -14,7 +16,7 @@
 
 :root {
   --dark1: #0e0e0e;
-  --dark2: #0e0e0e;
+  --dark2: #454343;
   --buttoncolor: #006a50;
 }
 
@@ -28,6 +30,10 @@
   color: #fff;
 }
 
+.section-title {
+  font-size: 25px;
+  color: var(--dark1);
+}
 .header {
   width: 1200px;
   margin: 20px auto;
@@ -83,4 +89,43 @@ nav div button {
 .banner img {
   width: 470px;
   padding-right: 50px;
+}
+/* pillers style  */
+
+.pillers {
+  width: 1200px;
+  margin: 50px auto;
+}
+.pillers h2 {
+  margin-bottom: 30px;
+}
+.piller-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.piller-items .piller-item {
+  width: 300px;
+  height: 240px;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 7px;
+}
+.piller-items .piller-item h6 {
+  font-size: 18px;
+  color: var(--dark1);
+  margin: 15px 0;
+}
+.piller-items .piller-item p {
+  font-size: 13px;
+  color: var(--dark2);
+  margin: 15px 0;
+}
+.piller-items .piller-item img {
+  width: 50px;
+  margin: 10px 0 5px 0;
+}
+.piller-items .piller-item .card-btn1 {
+  background: #5490f5;
 }
